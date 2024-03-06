@@ -1,0 +1,79 @@
+.navbar{
+    background-color:#34aadc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    button{
+        border-width: 1px;
+        border-color: #d0cccc;
+    }
+    a{
+        border-radius:  50% 20% 80% 30%;
+        background-color: #d0cccc;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding-left: 10px;
+&:hover{
+    background-color: #6a6868;
+}
+    }
+}
+
+.dashboard{
+    height: 400svh;
+    background-color: #d0cccc;
+    .col-sm-8{
+        margin-top: 20px;
+        text-align: justify;
+        text-indent: 10px;
+        line-height: 2.0;
+       
+    }
+  .col-sm-4{
+    margin-top: 20px;
+img{
+    border-radius: 100px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.card{
+    border-radius:  50% 20% 100% 30%;
+    height: 200px;
+    text-align: center;
+    background-color: #34aadc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+}
+}
+
+.contact{
+
+    margin-top: 20px;
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type=text], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    }
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+}
