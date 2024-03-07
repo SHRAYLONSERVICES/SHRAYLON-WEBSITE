@@ -5,19 +5,11 @@
         border-width: 1px;
         border-color: #d0cccc;
     }
-    button,a{
-        border-radius:  25% 20% 30% 30%;
-        background-color: #d0cccc;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        padding-left: 10px;
-&:hover{
-    background-color: #6a6868;
-}
-    }
+
 }
 
 .dashboard{
-    height: 400svh;
+    height: 600svh;
     .col-sm-8{
         margin-top: 20px;
         text-align: justify;
@@ -28,18 +20,16 @@
   .col-sm-4{
     margin-top: 20px;
 img{
-    border-radius: 100px;
-    
+    border-radius:10px; 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 }
 .card{
-    border-radius:  25% 20% 30% 30%;
+    border-radius: 10px;
     height: 450px;
     text-align: center;
     background-color: #34aadc;
     line-height: 2.0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 }
 }
@@ -47,11 +37,27 @@ img{
     margin-top: 20px;
 }
 
+.team{
+    text-align: center;
+    img{
+        height:300px;
+        width: 500px;
+        border-radius:2%;
+        object-fit:cover;
+        box-shadow: #ccc;
+    }
+    p{
+        height:200px;
+        width: 300px;
+        object-fit: cover;
+    }
+}
 
 .services{
     margin-top: 20px;
+    text-align: center;
     .card{
-        border-radius:  25% 20% 30% 30%;
+        border-radius: 10px;
         height:150px;
         width: 150px;
         text-align: center;
@@ -72,7 +78,7 @@ img{
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius:10px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 16px;
@@ -85,12 +91,185 @@ img{
         color: white;
         padding: 12px 20px;
         border: none;
-        border-radius: 4px;
-        cursor: pointer;
+
+        border-radius:10px;
+        cursor:pointer;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     
     }
     input[type=submit]:hover {
         background-color: #45a049;
+    }
+}
+
+
+
+
+
+$water-color: #022a45;
+
+
+
+$background: linear-gradient(to bottom, $water-color 0%, $water-color 50%, white 50%, white 100%);
+
+
+.back {
+  background: $background;
+  background-size: 300% 300%; 
+  color:#d0cccc;
+
+}
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card:hover .card__arc path {
+    fill:#022a45;
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+background-color: #022a45;  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // -webkit-line-clamp: 3;
+    overflow: hidden;
+    background-color: #022a45;
+  }
+
+
+
+  .scrolling-wrapper {
+    overflow-x: scroll ;
+    overflow-y: hidden;
+    margin-top: 20px;
+    
+    scrollbar-width: none;
+    white-space: nowrap;
+    
+  
+    .col-sm-12{
+      display: inline-block;
+p{
+    display:block
+}
+    }
+    .scrolling-wrapper {
+        -webkit-overflow-scrolling: touch;
+      }
+      
+  }
+  .neo-border {
+    margin-top: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:200px;
+    img{
+      object-fit: cover;
+      height: 150px;
+      width:140px;
     }
 }
