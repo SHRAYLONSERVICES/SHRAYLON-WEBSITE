@@ -1,3 +1,16 @@
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 .back {
   background: #022a45;
   background-size: 300% 300%;
@@ -5,6 +18,11 @@
   height: 100%;
   font-family: "MockFlowFont";
   text-align: center;
+  
+  
+  
+  
+  
 }
 
 .navbar {
@@ -29,6 +47,7 @@
 
   h1 {
     font-size: 80px;
+    
   }
 
   p {
@@ -270,10 +289,32 @@
 
 .line {
   border-left: 3px solid #ff0000;
-  padding-left: 2px;
-  margin-left: 20px;
+  // padding-left: 2px;
+  // margin-left: 20px;
   border-bottom-left-radius: 110px ;
   box-shadow: -1px 0px 0px 0px #180ab7;
+
+
+  
+ 
+    
+    
+    animation: changeShape 4s infinite alternate ease-in-out;
+  
+  
+  @keyframes changeShape {
+    50% {
+      border-bottom-left-radius: 20%;
+    }
+    50% {
+      border-bottom-left-radius: 30%;
+    }
+    100% {
+      border-bottom-left-radius: -20%;
+    }
+
+  }
+  
 }
 
 h3 {
@@ -317,12 +358,18 @@ button {
   border-radius: 5px;
   padding: 2rem;
   margin: 1rem 0;
+  background: linear-gradient(-65deg, #023471, #022956, #024d68, #02785d);
+  background-size: 400% 400%;
+  animation: animateBackground 10s ease infinite;
+ 
+
 }
 
 .footer {
   position: relative;
   display: flex;
   align-items: center;
+  
 }
 
 .container {

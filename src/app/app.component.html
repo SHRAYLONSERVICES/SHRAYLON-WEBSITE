@@ -3,11 +3,13 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ShrAylon</a>
 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
 
-
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarCollapsed }">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#experties">Experties</a>
           </li>
@@ -23,12 +25,7 @@
         </ul>
 
 
-        <form class="d-flex input-group w-auto">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-link active"><a href="" class="nav-link active">instagram</a></li>
-
-          </ul>
-        </form>
+      
       </div>
     </div>
   </nav>
@@ -40,12 +37,7 @@
 
         Shraylon is a dynamic IT services company specializing in the development of mobile
         and web applications using cutting-edge technologies such as React, React Native, and Angular.
-        With a passion for innovation and a commitment to excellence, we leverage our expertise to deliver
-        high-quality solutions tailored to meet the unique needs of each client. Our team of skilled developers
-        and designers is dedicated to crafting seamless user experiences and scalable, performance-driven applications
-        that drive business growth and success. Whether it's creating intuitive mobile apps for iOS and Android
-        platforms
-        or
+   
         building responsive web applications, Shraylon combines technical proficiency with creativity to deliver
         solutions
         that exceed expectations.
