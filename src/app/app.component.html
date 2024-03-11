@@ -1,9 +1,22 @@
-<div class="back">
+<div class="back area">
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+  
   <nav class="navbar navbar-expand-lg  ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ShrAylon</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()"
+      <div class="navbar-toggler"  data-toggle="collapse" (click)="toggleNavbar()"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
         <span *ngIf=isNavbarCollapsed class="fas fa-chevron-left">
@@ -13,7 +26,7 @@
 
         </span>
 
-      </button>
+      </div>
 
 
       <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarCollapsed }">
@@ -53,6 +66,10 @@
       </div>
       <div class="col-sm-4">
         <img src="./../assets/dashboard-removebg-preview.png" alt="" class="img-fluid">
+     
+
+
+
       </div>
     </div>
     <hr>
@@ -342,47 +359,8 @@
     <hr>
 
 
-    <!-- <div class="row contact container" id="contact" style="justify-content: center;">
-     
-      <div class="col-sm-4" >
-        <h1>contact us </h1>
-      </div>
-      <div class="col-sm-4">
-        <h6>number :9100751090</h6>
-        <h6>Mail: <a href="">shraylon&#64;gmail.com.com</a> </h6>
-        <h6>whatsapp:9100751090</h6>
-      </div>
-      <div class="col-sm-4">
-        <ul>
-          <li>
-            <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i
-                class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i
-                class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a class="btn btn-primary" style="background-color: #ff4500;" href="#!" role="button"><i
-                class="fab fa-reddit-alien"></i></a>
-          </li>
-        </ul>
-
-
-
-
-
-
-      </div>
-
-
-      <div class="col-sm-12">
-
-
-      </div>
-    </div> -->
-
-    <footer class="footer">
+  
+    <footer class="footer" id="contact">
 
 
       <div class="container">
@@ -394,7 +372,7 @@
                   <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.
                   </h3>
                   <form action="">
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Email ">
                     <button>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                         <path fill="none" d="M0 0h24v24H0z" />
@@ -523,13 +501,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="layout_item w-25" style="display:flex;justify-content: end;align-items: center;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10h3l-4-4-4 4h3v4h2v-4z" />
-                </svg>
-              </div>
+       
             </div>
           </div>
         </div>
