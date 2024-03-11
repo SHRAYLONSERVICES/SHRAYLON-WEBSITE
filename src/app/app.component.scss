@@ -47,7 +47,6 @@
 
   h1 {
     font-size: 80px;
-    
   }
 
   p {
@@ -450,6 +449,22 @@ svg {
     float: left;
     margin-right: 40px;
     white-space: nowrap
+  }
+  .dashboard .col-sm-8 {
+    h1{
+      font-size:xx-large;
+    }
+  
+  }
+  .navbar{
+    button{
+      border: none;
+      .fas {
+      
+        color: rgb(230, 230, 240); 
+        text-shadow: 2px 2px rgb(4, 122, 122);
+      }
+    }
   }
 
 }

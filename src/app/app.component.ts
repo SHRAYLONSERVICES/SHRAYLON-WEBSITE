@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'Shraylon';
 
-  isNavbarCollapsed = true;
+  isNavbarCollapsed = false;
 
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
